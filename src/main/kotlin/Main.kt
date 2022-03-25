@@ -7,6 +7,10 @@ import java.nio.file.Paths
 fun main() {
     val countOfBytesPerEncryptionBlock = 1024 * 1024
     val countOfThreads = 5
+
+    println("countOfBytesPerEncryptionBlock: ${countOfBytesPerEncryptionBlock/1024/1024} MB")
+    println("count of threads: $countOfThreads")
+
     val fileBytes = getBytesOfFile()
 
     val computator = DesComputator()

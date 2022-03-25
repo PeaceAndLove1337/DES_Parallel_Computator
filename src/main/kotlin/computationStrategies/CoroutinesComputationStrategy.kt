@@ -65,6 +65,8 @@ class CoroutinesComputationStrategy : ParallelComputationStrategy {
             }
         }
 
+        coroutineDispatcher.close()
+
         return@runBlocking result
     }
 
